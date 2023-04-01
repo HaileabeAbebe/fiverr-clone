@@ -1,0 +1,131 @@
+export const cards = [
+  {
+    id: 1,
+    title: "ai artist",
+    desc: "we have professional ai artist",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/f27bec553efc12cc60baed89b8f2223e-1674661140708/ai-artists-2x.png",
+  },
+  {
+    id: 2,
+    title: "Logo Design",
+    desc: "we have awesome logo designers",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741678/book-covers-2x.png",
+  },
+  {
+    id: 3,
+    title: "WordPress",
+    desc: "we have wordpress specialist",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/ae11e2d45410b0eded7fba0e46b09dbd-1598561917003/wordpress-2x.png",
+  },
+  {
+    id: 4,
+    title: "Voice Over",
+    desc: "freelancers willing to voice",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741669/voiceover-2x.png",
+  },
+  {
+    id: 5,
+    title: "Translation",
+    desc: "our freelancers can translate",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741674/translation-2x.png",
+  },
+  {
+    id: 6,
+    name: "Data Entry",
+    desc: "free lancers who can interpret your data",
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/055f758c1f5b3a1ab38c047dce553860-1598561741668/seo-2x.png",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig1",
+    username: "Haileabe abebe",
+  },
+  {
+    id: 2,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/spickex.jpeg",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig2",
+    username: "Legend Bob",
+  },
+  {
+    id: 3,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615082/christophbrandl.png",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig3",
+    username: "John Doe",
+  },
+  {
+    id: 4,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/lamonastudio-img.png",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig4",
+    username: "Emma Watson",
+  },
+  {
+    id: 5,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615096/passionshake.jpeg",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig5",
+    username: "Harry Potter",
+  },
+  {
+    id: 6,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615084/fernandobengua.png",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    cat: "Gig6",
+    username: "Ryan Reynolds",
+  },
+];
+
+export const gigInfo = [
+  {
+    id: 1,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/lamonastudio-img.png",
+    username: "Dawit solomon",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    desc: "i am a very passionated developer",
+    star: 5,
+    price: 500,
+  },
+  {
+    id: 2,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615068/mijalzagier.png",
+    username: "John Doe",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    desc: "i love coding",
+    star: 3,
+    price: 400,
+  },
+  {
+    id: 3,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/spickex.jpeg",
+    username: "Mahlet Kindie",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    desc: "i always wanted to be a developer",
+    star: 4.5,
+    price: 100,
+  },
+  {
+    id: 4,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615096/passionshake.jpeg",
+    username: "Efrata Tiruneh",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    desc: "i am a very passionated developer",
+    star: 3,
+    price: 100,
+  },
+  {
+    id: 5,
+    img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615084/fernandobengua.png",
+    username: "Eyuel Tadesse",
+    pp: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg",
+    desc: "i am a very passionated developer",
+    star: 5,
+    price: 300,
+  },
+];
