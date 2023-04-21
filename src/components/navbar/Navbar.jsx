@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Navbar.scss";
+import newRequest from "./../../utils/newRequest";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
 
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const isActive = () => {
     window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -19,12 +21,17 @@ const Navbar = () => {
     };
   }, []);
 
-  const currentUser = {
-    id: 1,
-    username: "John Doe",
-    isSeller: true,
-  };
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
+  const handleLogout = async () => {
+    try {
+      await newRequest.post("auth/logout");
+      localStorage.setItem("currentUser", null);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
@@ -42,7 +49,11 @@ const Navbar = () => {
           <span>Sign in</span>
 
           {!currentUser?.isSeller && <span>Become a Seller</span>}
-          {!currentUser && <button>join</button>}
+          {!currentUser && (
+            <Link to="/register">
+              <button>join</button>
+            </Link>
+          )}
           {currentUser && (
             <div
               className="user"
@@ -50,10 +61,7 @@ const Navbar = () => {
                 setOpen(!open);
               }}
             >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Emma_Watson_2013.jpg"
-                alt=""
-              />
+              <img src={currentUser.img || "/img/noavatar.png"} alt="" />
               <span>{currentUser.username}</span>
               {open && (
                 <div className="options">
@@ -73,7 +81,7 @@ const Navbar = () => {
                   <Link className="link" to="/messages">
                     Messages
                   </Link>
-                  <Link className="link" to="/login">
+                  <Link className="link" onClick={handleLogout}>
                     Logout
                   </Link>
                 </div>
@@ -82,13 +90,39 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <hr />
       {(active || pathname !== "/") && (
         <>
+          <hr />
           <div className="menu">
-            <span>Test 1</span>
-            <span>Test 2</span>
+            <Link className="link menuLink" to="/">
+              Graphics & Design
+            </Link>
+            <Link className="link menuLink" to="/">
+              Video & Animation
+            </Link>
+            <Link className="link menuLink" to="/">
+              Writing & Translation
+            </Link>
+            <Link className="link menuLink" to="/">
+              AI Services
+            </Link>
+            <Link className="link menuLink" to="/">
+              Digital Marketing
+            </Link>
+            <Link className="link menuLink" to="/">
+              Music & Audio
+            </Link>
+            <Link className="link menuLink" to="/">
+              Programming & Tech
+            </Link>
+            <Link className="link menuLink" to="/">
+              Business
+            </Link>
+            <Link className="link menuLink" to="/">
+              Lifestyle
+            </Link>
           </div>
+          <hr />
         </>
       )}
     </div>
