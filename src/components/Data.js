@@ -82,7 +82,7 @@ export const projects = [
   },
 ];
 
-export const gigInfo = [
+export const gigs = [
   {
     id: 1,
     img: "https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/d51cf66f8a7026eb56a8c8e6b6793b24-1617027896306/lamonastudio-img.png",

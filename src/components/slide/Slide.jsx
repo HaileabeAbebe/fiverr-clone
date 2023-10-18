@@ -1,7 +1,7 @@
 import React from "react";
-import "./Slide.scss";
 // import "C:/Users/Haileabe/Documents/Code/React Projects/fiverr-clone/node_modules/infinite-react-carousel/lib/carousel/style.css?inline";
 import Slider from "infinite-react-carousel";
+import "./Slide.scss";
 
 const Slide = ({ children, slidesToShow, arrowsScroll }) => {
   return (

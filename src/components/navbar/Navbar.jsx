@@ -46,13 +46,16 @@ const Navbar = () => {
           <span>Fiverr Business</span>
           <span>Explore</span>
           <span>English</span>
-          <span>Sign in</span>
-
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {!currentUser && (
-            <Link to="/register">
-              <button>join</button>
-            </Link>
+            <>
+              <Link to="/login" className="link">
+                Sign in
+              </Link>
+              <Link to="/register">
+                <button>join</button>
+              </Link>
+            </>
           )}
           {currentUser && (
             <div

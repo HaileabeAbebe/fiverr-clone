@@ -17,7 +17,7 @@ const Featured = () => {
             <button>Search</button>
           </div>
           <div className="popular">
-            <span>Popular:</span>
+            <span>Popular</span>
             <button>Web Design</button>
             <button>Wordpress</button>
             <button>Logo Design</button>

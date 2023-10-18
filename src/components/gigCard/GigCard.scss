@@ -55,12 +55,78 @@
         height: 20px;
       }
 
-      span {
-        font-size: 12px;
-        white-space: nowrap;
-        h2 {
-          white-space: nowrap;
+      .price {
+        span {
+          display: inline-block;
+          color: #999;
           font-size: 12px;
+          padding-right: 5px;
+        }
+
+        h2 {
+          display: inline-block;
+          color: #555;
+          font-size: 18px;
+          font-weight: 400;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gigCard {
+    width: 100%;
+    height: auto;
+
+    img {
+      height: 40%;
+    }
+
+    .info {
+      gap: 10px;
+
+      .user {
+        gap: 5px;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .rating {
+        gap: 5px;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      hr {
+        margin: 3px 0;
+      }
+
+      .details {
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+
+        .price {
+          span {
+            font-size: 10px;
+          }
+
+          h2 {
+            font-size: 14px;
+          }
         }
       }
     }

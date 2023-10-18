@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await newRequest.post(
-        "auth/login",
+        "/auth/login",
         {
           username,
           password,
@@ -28,6 +28,24 @@ const Login = () => {
       setError(err.response.data);
     }
   };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const res = await newRequest.post("/auth/login", {
+  //       username,
+  //       password,
+  //     });
+  //     localStorage.setItem("token", res.data.token);
+  //     navigate("/");
+  //     window.location.reload();
+  //     console.log(res);
+  //   } catch (err) {
+  //     console.log(err);
+  //     setError(err.response.data.message);
+  //   }
+  // };
+
   return (
     <div className="login">
       <form onSubmit={handleSubmit}>
